@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script data-main="app" src="lib/require.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap-theme.css" rel="stylesheet" type="text/css" />
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
+    <link href="css/chartist.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div id="main">
+    </div>
+    <div id="rank-sender">
+    </div>
+    <div id="rank-receiver">
+    </div>
+    <div id="switch">
+      <p>Data set:</p>
+      <select class="form-control dataset">
+        <option>Friday</option>
+        <option>Saturday</option>
+        <option>Sunday</option>
+      </select>
+    </div>
+    <div class="row timeline">
+    </div>
+    <div class="row timeline-control control-panel">
+      <div class="col-sm-3 col-sm-offset-1">
+        <button type="button" class="btn btn-default btn-sm previous"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span></button>
+        <button type="button" class="btn btn-default btn-sm play"><span class="glyphicon glyphicon-play" aria-hidden="true"></span></button>
+        <button type="button" class="btn btn-default btn-sm stop"><span class="glyphicon glyphicon-pause" aria-hidden="true"></span></button>
+        <button type="button" class="btn btn-default btn-sm next"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></button>
+      </div>
+      <div class="col-sm-8">
+        <div class="row">
+          <div class="col-sm-4">
+            <p>Current time: <span class="time">0</span></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2">
+            <p style="margin-top:5px">Window size:</p>
+          </div>
+          <div class="col-sm-2">
+            <input type="text" class="form-control size" value="1"></input>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2">
+            <p style="margin-top:5px">Step:</p>
+          </div>
+          <div class="col-sm-2">
+            <input type="text" class="form-control step" value="1"></input>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row filters control-panel">
+      <div class="col-sm-3 col-sm-offset-1">
+        <div class="row">
+          <div class="col-sm-2">
+            <p style="margin-top:5px">Sender:</p>
+          </div>
+          <div class="col-sm-4">
+            <input type="text" class="form-control sender"></input>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2">
+            <p style="margin-top:5px">Receiver:</p>
+          </div>
+          <div class="col-sm-4">
+            <input type="text" class="form-control receiver"></input>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 chart control-panel">
+        <div class="row" style="margin-top: 10px; margin-left: 20px;">
+          <div class="col-sm-3">
+            <p style="margin-top:5px">Stop links update:</p>
+          </div>
+          <div class="col-sm-2">
+            <input style="width:15px; height:15px; margin-top: 18px;"type="checkbox" class="form-control hide-btn"></input>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

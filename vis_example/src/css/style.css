@@ -1,0 +1,73 @@
+.axis text {
+    font: 10px sans-serif;
+}
+.axis path,
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+} 
+.brush .extent {
+    stroke: #eee;
+    fill-opacity: .125;
+    shape-rendering: crispEdges;
+}
+
+.control-panel {
+    display: none;
+}
+
+.timeline-control {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.timeline-control .btn {
+    margin-right: 15px;
+}
+
+.timeline-control .size, .timeline-control .step {
+    width: 50px;
+    height: 30px;
+    margin-left: -70px;
+}
+
+#rank-sender {
+    position: absolute;
+    top: 0px;
+    left: 650px;
+}
+
+#rank-receiver {
+    position: absolute;
+    top: 330px;
+    left: 650px;
+}
+
+#switch {
+    position: absolute;
+    top: 15px;
+    left: 1120px;
+    display: none;
+}
+
+.resize {
+    display: none;
+}
+
+/* */
+
+.bar {
+  fill: #cb181d;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
